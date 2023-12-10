@@ -65,7 +65,6 @@ nav.horizontalNavigation a:active {
 	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagescss/gamingcomputer.png);
 	background-position: center;
 	background-size: cover;
-	position: center;
 }
 
 .text-box {
@@ -123,7 +122,6 @@ nav.horizontalNavigation a:active {
 	border-radius: 10px;
 	margin-bottom: 6%;
 	padding: 20px 12px;
-	box-sizing: border box;
 	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2)
 }
 
@@ -138,33 +136,124 @@ p {
 body {
     font-family: Arial, Helvetica, sans-serif;	
 }
+/* About */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
 
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #62CFE9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+}
+
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
 
 		/* Footer Styles*/
 		
-.footer {
-    width: 100%;
-    margin: 0;
-    background-color: #8C52FF;
-    clear: both;
-    color: white;
-    font-weight: bold;
-    text-align: center;
+.container{
+	max-width: 1170px;
+	margin: auto;
+	margin-bottom: 25px;
 }
-
-}/* navigation for footer */
-.footer a:link {
-    color: white;
-    text-decoration: none;
+.row{
+	display: flex;
+	flex-wrap: wrap;
 }
-
-.footer a:visited {
-    color: navy;
-    background-color: grey;
-    text-decoration: none;
+ul{
+	list-style: none;
 }
-
-.footer a:hover {
-    text-decoration: underline;
+.footer{
+	background-color: #333;
+    padding: 70px 0;
 }
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #62CFE9;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+/* navigation for footer */
 
